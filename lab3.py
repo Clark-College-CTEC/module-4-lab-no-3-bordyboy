@@ -15,10 +15,10 @@ def snowman():
     circle1 = Circle(Point(2.5,3.5), .5)
     circle1.draw(win)
 
-    circle2 = Circle(Point(2.5,2.5), .5)
+    circle2 = Circle(Point(2.5,2.4), .6)
     circle2.draw(win)
 
-    circle3 = Circle(Point(2.5,1.5), .5)
+    circle3 = Circle(Point(2.5,1.1), .7)
     circle3.draw(win)
 
 
@@ -32,6 +32,14 @@ def snowman():
     eye2 = Circle(Point(2.7,3.6), .1)
     eye2.draw(win)
 
+
+    eyeball1 = Circle(Point(2.3,3.6), .02)
+    eyeball1.setFill('blue')
+    eyeball1.draw(win)
+
+    eyeball2 = Circle(Point(2.7,3.6), .02)
+    eyeball2.setFill('blue')
+    eyeball2.draw(win)
 
     # draw a nose using the polygon method and make it orange
     # name the nose using the variable nose
@@ -56,6 +64,14 @@ def snowman():
     hatline.setWidth(3)
     hatline.draw(win)
 
+
+    # draw 2 arms
+    
+    arm1 = Line(Point(3.1,2.5), Point(4,3.5))
+    arm1.draw(win)
+
+    arm2 = Line(Point(1.9,2.5), Point(0.8, 3.5))
+    arm2.draw(win)
 
     # close the program
     input('Press enter to quit the program ')
